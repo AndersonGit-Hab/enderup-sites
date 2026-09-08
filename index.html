@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Enderup — área de demonstração</title>
+<style>
+  :root {
+    --fundo: #ffffff;
+    --texto: #1a1a1a;
+    --suave: #6b6b6b;
+    --linha: #e5e5e5;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --fundo: #141414;
+      --texto: #f0f0f0;
+      --suave: #9a9a9a;
+      --linha: #2e2e2e;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 24px;
+    background: var(--fundo);
+    color: var(--texto);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 30rem; }
+  .marca {
+    margin: 0 0 28px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--linha);
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  h1 {
+    margin: 0 0 14px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+  p.texto {
+    margin: 0;
+    color: var(--suave);
+  }
+</style>
+</head>
+<body>
+  <main>
+    <p class="marca">Enderup</p>
+    <h1>Área de demonstração</h1>
+    <p class="texto">Este endereço hospeda as prévias dos sites em criação. Cada projeto fica em um endereço próprio, enviado direto a quem pediu.</p>
+  </main>
+</body>
+</html>
