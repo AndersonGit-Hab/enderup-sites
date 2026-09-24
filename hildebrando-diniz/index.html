@@ -59,7 +59,7 @@
     font-size:.66rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;
     color:var(--acao);margin-bottom:10px
   }
-  .fundo-claro .eyebrow,section:not(.fundo-escuro) .eyebrow{color:#8A6D1F}
+  .fundo-claro .eyebrow,section:not(.fundo-escuro) .eyebrow{color:#7A5F14}
 
   h1,h2{font-family:var(--serif);font-weight:700;letter-spacing:-.2px}
   h1{font-size:clamp(1.75rem,7.2vw,2.75rem);line-height:1.16;letter-spacing:-.3px;color:var(--txt-inv)}
@@ -142,7 +142,7 @@
     display:flex;justify-content:space-between;gap:14px;align-items:flex-start
   }
   .duvidas summary::-webkit-details-marker{display:none}
-  .duvidas summary::after{content:"+";font-size:1.4rem;line-height:1;color:#8A6D1F;flex:0 0 auto}
+  .duvidas summary::after{content:"+";font-size:1.4rem;line-height:1;color:#7A5F14;flex:0 0 auto}
   .duvidas details[open] summary::after{content:"\2212"}
   .duvidas .resp{padding:0 20px 20px;color:var(--txt-suave);font-size:.9375rem}
 
@@ -222,6 +222,8 @@
 </style>
 </head>
 <body>
+
+<main>
 
 <!-- 1 · topo -->
 <header class="topo">
@@ -393,6 +395,8 @@
   </div>
 </section>
 
+</main>
+
 <!-- 9 · rodape -->
 <footer>
   <div class="env">
@@ -406,10 +410,12 @@
   </div>
 </footer>
 
+<aside aria-label="Atalho de contato">
 <a class="btn flut" id="flut" href="https://wa.me/558396650731?text=Oi%2C%20vim%20pelo%20site">
   <svg width="20" height="20" viewBox="0 0 24 24" fill="#122A45" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2Zm5.5 14.1c-.2.6-1.2 1.2-1.7 1.2-.4 0-1 .1-3.2-.8-2.7-1.1-4.4-3.9-4.5-4-.1-.2-1-1.4-1-2.6 0-1.2.6-1.8.9-2.1.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2 0 .4 0 .5l-.3.4-.3.3c-.1.1-.2.3 0 .5l.9 1.4c.6.7 1.2 1 1.4 1.1.2.1.3.1.5-.1l.7-.8c.2-.2.3-.2.5-.1l1.9.9c.2.1.4.2.4.3.1.1.1.6-.1 1.2Z"/></svg>
   WhatsApp
 </a>
+</aside>
 
 <script>
   (function(){
