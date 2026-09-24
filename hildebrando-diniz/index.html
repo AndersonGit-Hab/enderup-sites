@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Hildebrando Diniz Júnior — Advogado previdenciário em Catolé do Rocha, PB</title>
+<meta name="description" content="Advogado em Catolé do Rocha — PB. Aposentadoria rural e híbrida, benefício negado pelo INSS e tempo de contribuição não reconhecido.">
+<style>
+  :root{
+    /* paleta — design.md */
+    --claro:#F7F5F0;
+    --claro-alt:#EFEBE3;
+    --escuro:#122A45;
+    --profundo:#0A1B2E;
+    --superficie:#1A3A5C;
+    --acao:#C9A227;
+    --acao-press:#B08F1E;
+    --destaque:#E2C86A;
+    --txt:#0F1A24;
+    --txt-suave:#4A4741;
+    --txt-inv:#F5F2EA;
+    --txt-inv-suave:#A9B8C9;
+    --linha:#E3DED3;
+    --linha-inv:rgba(201,162,39,.18);
+
+    /* tipografia */
+    --serif:Georgia,"Times New Roman",serif;
+    --sans:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+
+    /* espacamento */
+    --gap-secao:56px;
+    --largura:1120px;
+    --lado:20px;
+  }
+
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+  html{-webkit-text-size-adjust:100%}
+
+  body{
+    background:var(--claro);
+    color:var(--txt);
+    font-family:var(--sans);
+    font-size:1rem;
+    line-height:1.62;
+  }
+
+  img{display:block;max-width:100%}
+
+  .env{max-width:var(--largura);margin:0 auto;padding-left:var(--lado);padding-right:var(--lado)}
+
+  section{padding-top:var(--gap-secao);padding-bottom:var(--gap-secao)}
+
+  .fundo-escuro{background:var(--escuro);color:var(--txt-inv)}
+  .fundo-alt{background:var(--claro-alt)}
+
+  .eyebrow{
+    font-size:.66rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;
+    color:var(--acao);margin-bottom:10px
+  }
+  .fundo-claro .eyebrow,section:not(.fundo-escuro) .eyebrow{color:#8A6D1F}
+
+  h1,h2{font-family:var(--serif);font-weight:700;letter-spacing:-.2px}
+  h1{font-size:clamp(1.75rem,7.2vw,2.75rem);line-height:1.16;letter-spacing:-.3px;color:var(--txt-inv)}
+  h2{font-size:clamp(1.5rem,5.6vw,2.1rem);line-height:1.2;margin-bottom:14px}
+  .fundo-escuro h2{color:var(--txt-inv)}
+  h3{font-family:var(--sans);font-size:1.125rem;font-weight:700;line-height:1.3}
+
+  p+p{margin-top:14px}
+
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:9px;
+    height:52px;padding:0 24px;border-radius:6px;
+    background:var(--acao);color:var(--escuro);
+    font-family:var(--sans);font-size:1rem;font-weight:700;letter-spacing:.2px;
+    text-decoration:none;border:0;cursor:pointer
+  }
+  .btn:active{background:var(--acao-press);transform:translateY(1px)}
+  .btn-sec{
+    background:transparent;color:var(--acao);
+    box-shadow:inset 0 0 0 1.5px var(--acao)
+  }
+  .btn-sec:active{background:rgba(201,162,39,.12);color:var(--acao)}
+
+  /* ---------- 1 · topo ---------- */
+  .topo{position:relative;overflow:hidden;background:var(--escuro);padding:0}
+  .topo .faixa{position:relative;height:270px}
+  .topo .faixa img{width:100%;height:100%;object-fit:cover;object-position:center 24%}
+  .topo .fusao{
+    position:absolute;inset:0;
+    background:linear-gradient(180deg,rgba(10,27,46,.14) 0%,rgba(18,42,69,.30) 48%,rgba(18,42,69,.80) 80%,var(--escuro) 100%)
+  }
+  .topo .orn{position:absolute;top:0;right:0;width:110px;height:84px;z-index:3}
+  .topo .dentro{position:relative;z-index:2;margin-top:-16px;padding:4px var(--lado) 30px}
+  .topo .sub{font-size:1.0625rem;line-height:1.55;color:var(--txt-inv-suave);margin:12px 0 20px}
+  .topo .assin{margin-top:16px;font-size:.8125rem;line-height:1.55;color:var(--txt-inv-suave)}
+
+  /* ---------- 2 · credenciais ---------- */
+  .cred{background:var(--escuro);padding-top:0;padding-bottom:var(--gap-secao)}
+  .cred ul{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:20px 16px}
+  .cred li{display:flex;gap:10px;align-items:flex-start}
+  .cred svg{width:24px;height:24px;flex:0 0 24px;margin-top:1px}
+  .cred span{font-size:.8125rem;font-weight:600;line-height:1.4;color:var(--txt-inv)}
+
+  /* ---------- 3 · sobre ---------- */
+  .sobre .retrato{border-radius:10px;overflow:hidden;margin-bottom:22px}
+  .sobre .retrato img{width:100%;height:auto}
+  .sobre p{color:var(--txt-suave)}
+
+  /* ---------- 4 · areas ---------- */
+  .areas ul{list-style:none;display:grid;gap:14px;margin-top:22px}
+  .areas li{
+    background:var(--superficie);border:1px solid var(--linha-inv);border-radius:10px;
+    padding:20px 18px
+  }
+  .areas svg{width:28px;height:28px;margin-bottom:12px}
+  .areas h3{color:var(--txt-inv);margin-bottom:6px}
+  .areas p{font-size:.9375rem;line-height:1.55;color:var(--txt-inv-suave)}
+
+  /* ---------- 5 · como funciona ---------- */
+  .passos ol{list-style:none;display:grid;gap:14px;margin-top:22px;counter-reset:passo}
+  .passos li{
+    background:#fff;border:1px solid var(--linha);border-radius:10px;padding:20px;
+    counter-increment:passo
+  }
+  .passos li::before{
+    content:counter(passo);
+    display:grid;place-items:center;width:32px;height:32px;border-radius:999px;
+    background:var(--escuro);color:var(--acao);
+    font-family:var(--serif);font-size:1.0625rem;font-weight:700;margin-bottom:12px
+  }
+  .passos h3{margin-bottom:6px}
+  .passos p{font-size:.9375rem;color:var(--txt-suave)}
+
+  /* ---------- 6 · duvidas ---------- */
+  .duvidas .lista{max-width:720px;margin-top:22px}
+  .duvidas details{background:#fff;border:1px solid var(--linha);border-radius:10px;margin-bottom:10px}
+  .duvidas summary{
+    list-style:none;cursor:pointer;padding:18px 20px;
+    font-weight:700;font-size:1rem;line-height:1.4;
+    display:flex;justify-content:space-between;gap:14px;align-items:flex-start
+  }
+  .duvidas summary::-webkit-details-marker{display:none}
+  .duvidas summary::after{content:"+";font-size:1.4rem;line-height:1;color:#8A6D1F;flex:0 0 auto}
+  .duvidas details[open] summary::after{content:"\2212"}
+  .duvidas .resp{padding:0 20px 20px;color:var(--txt-suave);font-size:.9375rem}
+
+  /* ---------- 7 · onde ---------- */
+  .onde{text-align:center;padding-bottom:44px}
+  .onde .caixa{max-width:640px;margin:0 auto}
+  .onde .end{font-size:1.0625rem;line-height:1.6;color:var(--txt-inv);margin-bottom:8px}
+  .onde .ref{font-size:.9375rem;color:var(--txt-inv-suave);margin-bottom:22px}
+
+  /* ---------- 8 · chamada ---------- */
+  .chamada{position:relative;overflow:hidden;text-align:center;background:var(--profundo)}
+  .chamada .orn{position:absolute;left:0;bottom:0;width:110px;height:84px}
+  .chamada p{max-width:34ch;margin:0 auto 22px;color:var(--txt-inv-suave);font-size:1.0625rem}
+  .chamada{padding-top:48px;padding-bottom:52px}
+
+  /* ---------- 9 · rodape ---------- */
+  footer{
+    background:var(--profundo);color:var(--txt-inv-suave);
+    padding:36px 0 110px; /* 110px de folga para o flutuante nao cobrir texto */
+    font-size:.8125rem;line-height:1.55;
+    border-top:1px solid rgba(201,162,39,.20)
+  }
+  footer .nome{font-family:var(--serif);font-size:1.0625rem;color:var(--txt-inv);margin-bottom:4px}
+  footer .oab{color:var(--destaque);font-weight:700;letter-spacing:.3px;margin-bottom:16px}
+  footer a{color:var(--txt-inv-suave)}
+  footer .legal{margin-top:20px;padding-top:16px;border-top:1px solid rgba(255,255,255,.10);color:#7E968D}
+
+  /* ---------- flutuante ---------- */
+  .flut{
+    position:fixed;right:20px;bottom:20px;z-index:50;
+    height:52px;padding:0 20px;border-radius:999px;
+    box-shadow:0 6px 20px rgba(0,0,0,.28);
+    opacity:0;transform:translateY(8px);pointer-events:none;
+    transition:opacity .2s ease,transform .2s ease
+  }
+  .flut.ver{opacity:1;transform:none;pointer-events:auto}
+
+  /* ---------- desktop ---------- */
+  @media (min-width:720px){
+    .cred ul{grid-template-columns:repeat(4,1fr)}
+    .areas ul{grid-template-columns:repeat(2,1fr)}
+    .passos ol{grid-template-columns:repeat(3,1fr)}
+  }
+  @media (min-width:900px){
+    :root{--gap-secao:88px}
+    body{font-size:1.0625rem}
+    .topo{height:440px;display:flex;align-items:center}
+    .topo .faixa{position:absolute;top:0;right:0;bottom:0;width:56%;height:auto}
+    .topo .faixa img{object-position:38% 30%}
+    .topo .fusao{
+      background:
+        linear-gradient(90deg,var(--escuro) 0%,rgba(18,42,69,.94) 22%,rgba(18,42,69,.62) 48%,rgba(18,42,69,.30) 74%,rgba(18,42,69,.20) 100%),
+        linear-gradient(180deg,rgba(10,27,46,.12) 0%,rgba(10,27,46,.34) 100%)
+    }
+    .topo .dentro{margin-top:0;padding:0;width:100%;max-width:var(--largura);margin-left:auto;margin-right:auto;padding-left:var(--lado);padding-right:var(--lado)}
+    .topo .conteudo{max-width:600px}
+    .topo h1{max-width:16ch}
+    .topo .sub{max-width:42ch}
+    .cred{padding-top:36px;padding-bottom:44px}
+    .cred ul{gap:20px}
+    .sobre .grade{align-items:start}
+    .sobre .grade>div:last-child{padding-top:8px}
+    .areas ul{grid-template-columns:repeat(3,1fr)}
+    .sobre .grade{display:grid;grid-template-columns:40% 1fr;gap:40px;align-items:center}
+    .sobre .retrato{margin-bottom:0}
+  }
+
+  @media (hover:hover){
+    .areas li{transition:border-color .15s ease}
+    .areas li:hover{border-color:rgba(201,162,39,.45)}
+  }
+
+  @media (prefers-reduced-motion:reduce){
+    *{transition:none!important;animation:none!important}
+    .flut{opacity:1;transform:none;pointer-events:auto}
+  }
+</style>
+</head>
+<body>
+
+<!-- 1 · topo -->
+<header class="topo">
+  <div class="faixa">
+    <img src="topo-escritorio.webp" width="1200" height="675" alt="Recepção do escritório H2 Advocacia Diniz, com o logo na parede">
+    <div class="fusao"></div>
+  </div>
+  <svg class="orn" viewBox="0 0 110 84" fill="none" aria-hidden="true">
+    <path d="M55 -10 L120 55" stroke="#C9A227" stroke-width="1.5"/>
+    <path d="M72 -10 L137 55" stroke="#C9A227" stroke-width="1" opacity=".45"/>
+    <path d="M89 -10 L154 55" stroke="#C9A227" stroke-width="1" opacity=".25"/>
+  </svg>
+  <div class="dentro">
+    <div class="conteudo">
+      <p class="eyebrow">Direito Previdenciário</p>
+      <h1>Seu tempo de roça pode contar para a aposentadoria.</h1>
+      <p class="sub">Trabalhou no campo e ainda não se aposentou? Esse período pode ser somado ao tempo de contribuição urbana. Me chame no WhatsApp e conte o seu caso.</p>
+      <a class="btn" href="https://wa.me/558396650731?text=Oi%2C%20vim%20pelo%20site%20e%20queria%20falar%20sobre%20aposentadoria">Falar no WhatsApp</a>
+      <p class="assin">Hildebrando Diniz Júnior · Advogado · Catolé do Rocha — PB</p>
+    </div>
+  </div>
+</header>
+
+<!-- 2 · credenciais -->
+<section class="cred">
+  <div class="env">
+    <ul>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="#E2C86A" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.5 4 6v6c0 4.5 3.2 8.2 8 9.5 4.8-1.3 8-5 8-9.5V6l-8-3.5Z"/><path d="m8.8 11.8 2.2 2.2 4.2-4.4"/></svg>
+        <span>Ex-Conselheiro Estadual da OAB/PB</span>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="#E2C86A" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 2 8l10 5 10-5-10-5Z"/><path d="M6 10.5V16c0 1.4 2.7 2.8 6 2.8s6-1.4 6-2.8v-5.5"/><path d="M21 8.6V14"/></svg>
+        <span>Pós-graduado em Direito Civil e Sucessões</span>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="#E2C86A" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5v17M5.5 7h13M12 20.5H7.5m4.5 0h4.5"/><path d="m7 7-3 6a3 3 0 0 0 6 0L7 7Zm10 0-3 6a3 3 0 0 0 6 0l-3-6Z"/></svg>
+        <span>OAB-PB 17.617</span>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="#E2C86A" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>
+        <span>Escritório em Catolé do Rocha — PB</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- 3 · sobre mim -->
+<section class="sobre">
+  <div class="env">
+    <div class="grade">
+      <div class="retrato">
+        <img src="retrato.webp" width="800" height="1000" loading="lazy" alt="Hildebrando Diniz Júnior, de terno escuro, em pé atrás de uma tribuna de madeira">
+      </div>
+      <div>
+        <p class="eyebrow">Sobre mim</p>
+        <h2>Advogo em Catolé do Rocha, na H2 Advocacia Diniz.</h2>
+        <p>Sou Hildebrando Diniz Júnior. Atendo na H2 Advocacia Diniz, na Rua Barão do Rio Branco.</p>
+        <p>Meu trabalho é com Direito Previdenciário — aposentadoria rural e híbrida, tempo de contribuição que o INSS não reconheceu, benefício negado. Também atuo em Direito Civil e Sucessões, área em que sou pós-graduado, e em Direito do Consumidor.</p>
+        <p>Fui Conselheiro Estadual da OAB/PB.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4 · areas de atuacao -->
+<section class="areas fundo-escuro">
+  <div class="env">
+    <p class="eyebrow">Áreas de atuação</p>
+    <h2>Em que eu posso te ajudar</h2>
+    <ul>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="#E2C86A" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21V9"/><path d="M12 13c-3.5 0-5.5-2-5.5-5.5C10 7.5 12 9.5 12 13Z"/><path d="M12 13c3.5 0 5.5-2 5.5-5.5C14 7.5 12 9.5 12 13Z"/><path d="M4 21h16"/></svg>
+        <h3>Aposentadoria rural e híbrida</h3>
+        <p>Tempo de trabalho no campo somado ao urbano para chegar à aposentadoria.</p>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="#E2C86A" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5Z"/><path d="M14 3v5h5"/><path d="m9.5 12.5 5 5m0-5-5 5"/></svg>
+        <h3>Benefício negado pelo INSS</h3>
+        <p>Pedido indeferido, exigência que não termina, perícia que não deu certo.</p>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="#E2C86A" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5.5l3.5 2"/></svg>
+        <h3>Tempo de contribuição</h3>
+        <p>Período que o INSS não reconheceu, vínculo que não entrou na conta.</p>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="#E2C86A" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5"/><path d="M6 10v10h12V10"/><path d="M10 20v-5.5h4V20"/></svg>
+        <h3>Inventário e partilha</h3>
+        <p>Direito Civil e Sucessões, área da minha pós-graduação.</p>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="#E2C86A" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="2"/><path d="M2.5 10h19"/><path d="M6.5 14.5h4"/></svg>
+        <h3>Direito do Consumidor</h3>
+        <p>Cobrança indevida, negativação, problema com banco ou plano de saúde.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- 5 · como funciona -->
+<section class="passos">
+  <div class="env">
+    <p class="eyebrow">Como funciona</p>
+    <h2>O que acontece depois que você me chama</h2>
+    <ol>
+      <li>
+        <h3>Você me chama e conta o seu caso.</h3>
+        <p>Pelo WhatsApp mesmo, com as suas palavras.</p>
+      </li>
+      <li>
+        <h3>Eu peço os documentos que preciso ver.</h3>
+        <p>Carteira de trabalho, carnê, o que o INSS respondeu, o que você tiver guardado.</p>
+      </li>
+      <li>
+        <h3>Depois de analisar, eu te digo o que dá para fazer — e o que não dá.</h3>
+        <p>Sem promessa. Se o seu caso não tem caminho, você vai saber por mim.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- 6 · duvidas -->
+<section class="duvidas fundo-alt">
+  <div class="env">
+    <p class="eyebrow">Dúvidas frequentes</p>
+    <h2>O que as pessoas costumam perguntar</h2>
+    <div class="lista">
+      <details>
+        <summary>Trabalhei na roça quando era novo. Isso conta?</summary>
+        <div class="resp">Pode contar. O tempo de serviço rural pode ser somado ao urbano para chegar à aposentadoria — depende de como foi o seu caso, e é isso que eu analiso.</div>
+      </details>
+      <details>
+        <summary>Que documentos eu preciso levar?</summary>
+        <div class="resp">Me mande o que você tiver: carteira de trabalho, carnê de contribuição, documento do sindicato, a resposta do INSS. Se faltar alguma coisa, eu digo o que falta.</div>
+      </details>
+      <details>
+        <summary>O INSS negou o meu pedido. Acabou?</summary>
+        <div class="resp">Não necessariamente — existem prazos e caminhos depois da negativa. O primeiro passo é ver o que foi respondido.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- 7 · onde me encontrar -->
+<section class="onde fundo-escuro">
+  <div class="env">
+    <div class="caixa">
+      <p class="eyebrow">Onde me encontrar</p>
+      <h2>H2 Advocacia Diniz</h2>
+      <p class="end">Rua Barão do Rio Branco, 763<br>Catolé do Rocha — PB</p>
+      <p class="ref">Atendimento com hora marcada pelo WhatsApp.</p>
+      <a class="btn btn-sec" href="https://www.google.com/maps/search/?api=1&amp;query=Rua+Bar%C3%A3o+do+Rio+Branco%2C+763+-+Catol%C3%A9+do+Rocha+-+PB" target="_blank" rel="noopener">Abrir no Google Maps</a>
+    </div>
+  </div>
+</section>
+
+<!-- 8 · chamada final -->
+<section class="chamada fundo-escuro">
+  <svg class="orn" viewBox="0 0 110 84" fill="none" aria-hidden="true">
+    <path d="M-10 29 L55 94" stroke="#C9A227" stroke-width="1.5"/>
+    <path d="M-10 46 L55 111" stroke="#C9A227" stroke-width="1" opacity=".45"/>
+    <path d="M-10 63 L55 128" stroke="#C9A227" stroke-width="1" opacity=".25"/>
+  </svg>
+  <div class="env">
+    <h2>Conte o seu caso.</h2>
+    <p>Me mande uma mensagem com o que aconteceu. Eu leio e te respondo.</p>
+    <a class="btn" href="https://wa.me/558396650731?text=Oi%2C%20vim%20pelo%20site%20e%20queria%20falar%20sobre%20o%20meu%20caso">Falar no WhatsApp</a>
+  </div>
+</section>
+
+<!-- 9 · rodape -->
+<footer>
+  <div class="env">
+    <p class="nome">Hildebrando Diniz Júnior</p>
+    <p class="oab">OAB-PB 17.617</p>
+    <p>H2 Advocacia Diniz<br>
+       Rua Barão do Rio Branco, 763 — Catolé do Rocha — PB<br>
+       <a href="https://www.instagram.com/hildebrandodiniz.adv/" target="_blank" rel="noopener">@hildebrandodiniz.adv</a>
+    </p>
+    <p class="legal">Este site tem caráter meramente informativo, nos termos do Provimento 205/2021 do CFOAB.</p>
+  </div>
+</footer>
+
+<a class="btn flut" id="flut" href="https://wa.me/558396650731?text=Oi%2C%20vim%20pelo%20site">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="#122A45" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2Zm5.5 14.1c-.2.6-1.2 1.2-1.7 1.2-.4 0-1 .1-3.2-.8-2.7-1.1-4.4-3.9-4.5-4-.1-.2-1-1.4-1-2.6 0-1.2.6-1.8.9-2.1.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2 0 .4 0 .5l-.3.4-.3.3c-.1.1-.2.3 0 .5l.9 1.4c.6.7 1.2 1 1.4 1.1.2.1.3.1.5-.1l.7-.8c.2-.2.3-.2.5-.1l1.9.9c.2.1.4.2.4.3.1.1.1.6-.1 1.2Z"/></svg>
+  WhatsApp
+</a>
+
+<script>
+  (function(){
+    var f = document.getElementById('flut'), visivel = false;
+    function ver(){
+      var deve = window.scrollY > 400;
+      if (deve !== visivel){ visivel = deve; f.classList.toggle('ver', deve); }
+    }
+    window.addEventListener('scroll', ver, {passive:true});
+    ver();
+  })();
+</script>
+
+</body>
+</html>
