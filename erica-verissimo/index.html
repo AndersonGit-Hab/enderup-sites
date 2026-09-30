@@ -190,7 +190,7 @@ p+p{margin-top:14px}
     </nav>
   </div>
   <div class="foto">
-    <img src="topo-retrato.webp" width="1086" height="1448" fetchpriority="high" alt="Érica Verissimo, nutricionista, com a mão no queixo, olhando para a câmera">
+    <img src="topo-retrato.webp" srcset="topo-retrato-800.webp 800w, topo-retrato.webp 1086w" sizes="(min-width:900px) 50vw, 100vw" width="1086" height="1448" fetchpriority="high" alt="Érica Verissimo, nutricionista, com a mão no queixo, olhando para a câmera">
   </div>
   <div class="texto">
     <p class="eyebrow">Nutrição comportamental · Reeducação alimentar · Nutrição clínica</p>
@@ -213,7 +213,7 @@ p+p{margin-top:14px}
       <p class="filete">“Nutrição de verdade é sobre cuidar de si, não sobre caber em expectativas alheias.”</p>
     </div>
     <figure class="cartao-foto">
-      <img src="consultorio.webp" width="800" height="1000" loading="lazy" alt="Érica à mesa do consultório, escrevendo num caderno, com uma fruteira e um copo de água com limão">
+      <img src="consultorio.webp" srcset="consultorio-680.webp 680w, consultorio.webp 800w" sizes="(min-width:900px) 400px, calc(100vw - 40px)" width="800" height="1000" loading="lazy" alt="Érica à mesa do consultório, escrevendo num caderno, com uma fruteira e um copo de água com limão">
     </figure>
   </div>
   <span class="palavra" aria-hidden="true" data-palavra="Nutrir"></span>
@@ -345,7 +345,9 @@ p+p{margin-top:14px}
     }
     ultimo=y;
   }
-  window.addEventListener('scroll',f,{passive:true});pc.addEventListener('change',f);f();
+  // lê a rolagem só no quadro seguinte, para não forçar o navegador a recalcular a página no meio do carregamento
+  var pedido=false;function agenda(){if(!pedido){pedido=true;requestAnimationFrame(function(){pedido=false;f()})}}
+  window.addEventListener('scroll',agenda,{passive:true});pc.addEventListener('change',agenda);agenda();
 })();
 </script>
 </body>
